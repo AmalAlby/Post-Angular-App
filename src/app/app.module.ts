@@ -5,18 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddpostComponent } from './addpost/addpost.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ViewpostComponent } from './viewpost/viewpost.component';
 
 const myroute:Routes=[
   {
     path:"",
     component:AddpostComponent
+  },
+  {
+    path:"view",
+    component:ViewpostComponent
   }
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    AddpostComponent
+    AddpostComponent,
+    ViewpostComponent
   ],
   imports: [
     BrowserModule,
