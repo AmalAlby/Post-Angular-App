@@ -21,6 +21,7 @@ export class AddpostComponent {
       "title": this.title,
       "body":this.body
     }
+    console.log(data)
 
   }
 
